@@ -1,0 +1,147 @@
+/* establishing border-boxes for elements */
+* {
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+
+}
+
+body {
+    background-color: black;
+}
+
+/* modified to occupy screen horizontally */
+header {
+    background-color: #0072bb;
+    font-family: "Gill Sans", sans-serif;
+    color: #ffffff;
+    float: left; 
+    width: 11rem;
+    height: 100vh;
+    padding: 1%;
+}
+
+
+header img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15%;
+  
+}
+  
+header h1 {
+justify-content: center;
+    font-size: 48px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: left;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 25px;
+}
+
+/* all links recieve white font color */
+a {
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+a:hover {
+  box-shadow: inset 100px 0 0 0 #54b3d6;
+  color: black;
+}
+
+p {
+    font-size: 16px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.content {
+    margin-left: 225px;
+    margin-right: 25px;
+    margin-top: 25px;
+    position: relative;
+}
+
+/*consolidated to become more semantic */
+main div {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: fit-content;
+    font-family: "Gill Sans", sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+.resume {
+    margin-bottom: 0%;
+}
+
+/*consolidated to become more semantic */
+main div img {
+    max-height: 200px
+}
+
+/*consolidated to become more semantic */
+main div h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* added contact form for fun */
+.label {
+    display: block;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #058de2;
+}
+
+.styled:hover {
+    background-color: white(255, 0, 0, 1);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.footer {
+    padding: 5px;
+    clear: both;
+    font-family: "Gill Sans", sans-serif;
+    text-align: center;
+    background-color: #0072bb;
+
+}
+
+.footer h2 {
+    font-size: 18px;
+}
