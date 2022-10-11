@@ -40,6 +40,7 @@ header nav {
     float: left;
     font-family: "Gill Sans", sans-serif;
     font-size: 20px;
+    line-height: 25pt;
 }
 
 header nav ul {
@@ -63,6 +64,7 @@ header nav a {
 
 p {
     font-size: 16px;
+    line-height: 16pt;
 }
 
 .content {
@@ -72,7 +74,6 @@ p {
     position: relative;
 }
 
-/*consolidated to become more semantic */
 main div {
     margin-bottom: 20px;
     padding: 50px;
@@ -82,45 +83,44 @@ main div {
     color: #ffffff;
 }
 
-.resume {
-    margin-bottom: 0%;
+/* make text and img stay together on resizing */
+.wrapper {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.wrapper a {
+   color: white; 
+   text-decoration: none;
 }
 
-/*consolidated to become more semantic */
+
+/* makes img link enlarge when hover */
+.dialate {
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}     
+.dialate:hover {
+    transform: scale(1.5);
+}
+
+.contactMe {
+    list-style: none;
+}
+
+.resume a {
+    color: #ffffff;
+    text-decoration: none;    
+}
+
 main div img {
     max-height: 200px
 }
 
-/*consolidated to become more semantic */
 main div h2 {
     margin-bottom: 20px;
     font-size: 36px;
-}
-
-/* added contact form for fun */
-.label {
-    display: block;
-    font-family: "Gill Sans", sans-serif;
-}
-
-.styled {
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    border-radius: 10px;
-    background-color: #058de2;
-}
-
-.styled:hover {
-    background-color: white(255, 0, 0, 1);
-}
-
-.styled:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-        inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
 .footer {
